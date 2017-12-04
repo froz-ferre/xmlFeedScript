@@ -14,5 +14,28 @@
 <body>
     <h1>V PIZDU TEBYA!</h1>
     <h1>Current danabase: {{ db_name }}</h1>
+    <p>{{ ti }}</p>
+    
+
+    <table style="width:100%">
+        <thead>
+        <tr>
+          <th>Table</th>
+          <th>Count</th>
+          <th>Parse time</th>
+          <th>Link</th>
+        </tr>
+        </thead>
+
+        {% for i in range(ti[0].__len__()) %}
+        <tr>
+            <td>{{ ti[0][i] }}</td>
+            <td>{{ ti[1][i] }}</td>
+            <td>{{ ti[2][i] }}</td>
+            <td><a href = {{ ti[3][i] }} >Feed</a></td>
+        </tr>
+        {% endfor %}
+
+      </table> 
 </body>
 </html>
