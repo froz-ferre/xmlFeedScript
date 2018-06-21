@@ -31,4 +31,4 @@ class TablesInfo():
         return str(row)
 
     def get_xml_file_link(self):
-        passs
+        pass
